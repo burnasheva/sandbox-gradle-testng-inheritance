@@ -1,0 +1,3 @@
+dependencies {
+    testCompile project( path: ':module1', configuration: 'tests' )
+}
