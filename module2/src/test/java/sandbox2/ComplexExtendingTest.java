@@ -15,4 +15,14 @@ public class ComplexExtendingTest extends AbstractTest {
         assert object != null;
     }
 
+    @Test (retryAnalyzer = MyRetryAnalyzer.class)
+    public void oneTest() {
+        assert false;
+    }
+
+    @Test (retryAnalyzer = MyRetryAnalyzer.class)
+    public void twoTest() {
+        assert false;
+    }
+
 }
