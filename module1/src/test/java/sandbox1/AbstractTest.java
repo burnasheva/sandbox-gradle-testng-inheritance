@@ -20,4 +20,9 @@ public abstract class AbstractTest {
         assert object != null;
     }
 
+    @Test
+    public void testPlus() {
+        assert 1+3 == 5;
+    }
+
 }
