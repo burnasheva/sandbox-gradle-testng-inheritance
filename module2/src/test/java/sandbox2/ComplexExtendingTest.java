@@ -10,7 +10,7 @@ public class ComplexExtendingTest extends AbstractTest {
         return "ComplexExtendingTest@" + System.currentTimeMillis();
     }
 
-    @Test
+    @Test (retryAnalyzer = MyRetryAnalyzer.class)
     public void additionalTest() {
         assert object != null;
     }
