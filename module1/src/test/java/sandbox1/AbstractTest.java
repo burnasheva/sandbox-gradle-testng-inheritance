@@ -14,7 +14,6 @@ public abstract class AbstractTest {
 
     protected abstract Object createObject();
 
-
     @Test
     public void test() {
         assert object != null;
