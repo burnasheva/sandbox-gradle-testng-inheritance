@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
  */
 public class IgnoredTest {
 
-    @Test (enabled = false)
+    @Test(retryAnalyzer = MyRetryAnalyzer.class)
     public void testShouldBeIgnored(){
         assert true;
     }
