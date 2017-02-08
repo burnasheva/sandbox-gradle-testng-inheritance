@@ -12,12 +12,12 @@ public class ComplexExtendingTest {
 
     @Test (retryAnalyzer = MyRetryAnalyzer.class)
     public void oneTest() {
-        assert false;
+        assert true;
     }
 
     @Test (retryAnalyzer = MyRetryAnalyzer.class)
     public void twoTest() {
-        assert false;
+        assert true;
     }
 
 }
